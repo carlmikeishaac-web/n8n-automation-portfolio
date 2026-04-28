@@ -78,7 +78,7 @@ or Sev 2 case goes unnoticed.
 - Dynamic email body built from live sheet 
 data<img width="1874" height="899" alt="Screenshot 2026-04-28 at 11 50 15" src="https://github.com/user-attachments/assets/ed50ca80-30c0-4b87-a092-5d17b5808f4b" />
 
-### Project 3  SLA Breach Monitor
+### Project 4  SLA Breach Monitor
 
 ## What This Does
 An automated workflow that runs every morning, scans all open support cases, 
@@ -130,6 +130,7 @@ required response within 4 hours and Sev2 within 24 hours.
 
 ## Screenshot
 <img width="1874" height="888" alt="Screenshot 2026-04-28 at 13 09 21" src="https://github.com/user-attachments/assets/0284adcc-715b-49e6-a042-bc4ad0dcac64" />
+<img width="1516" height="204" alt="Screenshot 2026-04-28 at 13 24 39" src="https://github.com/user-attachments/assets/1b78b72b-8185-43ca-9f5c-0680ec3847bb" />
 
 
 
