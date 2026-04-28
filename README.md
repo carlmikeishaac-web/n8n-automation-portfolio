@@ -78,3 +78,60 @@ or Sev 2 case goes unnoticed.
 - Dynamic email body built from live sheet 
 data<img width="1874" height="899" alt="Screenshot 2026-04-28 at 11 50 15" src="https://github.com/user-attachments/assets/ed50ca80-30c0-4b87-a092-5d17b5808f4b" />
 
+### Project 3  SLA Breach Monitor
+
+## What This Does
+An automated workflow that runs every morning, scans all open support cases, 
+identifies any that have breached SLA thresholds, and sends a formatted HTML 
+alert email to the operations manager — with a full audit log written back to 
+Google Sheets.
+
+No manual checking. No missed breaches.
+
+## The Problem It Solves
+In enterprise support environments, SLA breaches often go unnoticed until a 
+customer escalates. This workflow eliminates that risk by automating the 
+detection and notification process on a fixed schedule.
+
+Based on real escalation management experience at Snowflake — where Sev1 cases 
+required response within 4 hours and Sev2 within 24 hours.
+
+## How It Works
+
+1. **Schedule Trigger** — fires automatically every morning at 9am
+2. **Google Sheets** — reads all open cases from the cases tab
+3. **Code Node** — calculates hours open per case, flags any SLA breach based on priority rules
+4. **IF Node** — routes the workflow: breaches found vs all clear
+5. **HTTP Request** — calls Open-Meteo API to enrich the alert with live weather data for the customer city
+6. **Code Node** — builds a formatted HTML email body dynamically
+7. **Gmail** — sends the breach alert email with a full case table
+8. **Google Sheets** — appends a summary log row with timestamp and breach count
+
+## SLA Rules
+| Priority | SLA Limit |
+|---|---|
+| Sev1 | 4 hours |
+| Sev2 | 24 hours |
+
+## Tools Used
+- n8n (workflow automation)
+- Google Sheets (case data + audit log)
+- Gmail (alert delivery)
+- Open-Meteo API (external HTTP request — live weather enrichment)
+- JavaScript (Code node — SLA calculation and HTML email builder)
+
+## Key Concepts Demonstrated
+- Schedule-based automation
+- Multi-step conditional logic
+- External API integration via HTTP Request node
+- Dynamic HTML generation in a Code node
+- Data write-back to Google Sheets
+- End-to-end operational workflow with audit trail
+
+## Screenshot
+<img width="1874" height="888" alt="Screenshot 2026-04-28 at 13 09 21" src="https://github.com/user-attachments/assets/0284adcc-715b-49e6-a042-bc4ad0dcac64" />
+
+
+
+
+
