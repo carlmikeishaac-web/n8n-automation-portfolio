@@ -78,6 +78,7 @@ or Sev 2 case goes unnoticed.
 - Dynamic email body built from live sheet 
 data<img width="1874" height="899" alt="Screenshot 2026-04-28 at 11 50 15" src="https://github.com/user-attachments/assets/ed50ca80-30c0-4b87-a092-5d17b5808f4b" />
 
+
 ### Project 4  SLA Breach Monitor
 
 ## What This Does
@@ -133,6 +134,24 @@ required response within 4 hours and Sev2 within 24 hours.
 <img width="1516" height="204" alt="Screenshot 2026-04-28 at 13 24 39" src="https://github.com/user-attachments/assets/1b78b72b-8185-43ca-9f5c-0680ec3847bb" />
 
 
+### Project 4 - Fitness AI Check-in Tool
+**n8n automation + Claude API for intelligent fitness coaching**
 
+## Use Case
+Automated daily check-ins for personal training clients. 
+Google Form → n8n workflow → Claude API → Telegram + Gmail delivery
+
+## Tech Stack
+- n8n (workflow automation)
+- Claude API (intelligent responses)
+- Google Forms (client input)
+- Google Sheets (data storage)
+- Telegram + Gmail (client delivery)
+
+## Why Built
+Demonstrates automation-first thinking + AI integration for real-world use case.
+Currently live with PT client, gathering feedback for v2 improvements.
+
+<img width="1722" height="830" alt="Screenshot 2026-06-01 at 09 34 18" src="https://github.com/user-attachments/assets/dd7b0e9a-f506-4ca1-9ea8-53d93fb02484" />
 
 
