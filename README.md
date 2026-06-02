@@ -134,7 +134,7 @@ required response within 4 hours and Sev2 within 24 hours.
 <img width="1516" height="204" alt="Screenshot 2026-04-28 at 13 24 39" src="https://github.com/user-attachments/assets/1b78b72b-8185-43ca-9f5c-0680ec3847bb" />
 
 
-### Project 4 - Fitness AI Check-in Tool
+### Project 5 - Fitness AI Check-in Tool
 **n8n automation + Claude API for intelligent fitness coaching**
 
 ## Use Case
